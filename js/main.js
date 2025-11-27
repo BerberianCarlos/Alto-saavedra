@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // 2) cargar chatbot.js DESPUÉS de cargar el HTML
     const script = document.createElement("script");
-    script.src = "/js/chatbot.js";
+    script.src = "./js/chatbot.js";
 
     script.onload = () => {
         if (typeof initChatbot === "function") {
