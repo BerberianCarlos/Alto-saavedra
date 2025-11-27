@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gastronomía – Alto Saavedra Mall</title>
+  <meta name="description" content="Cafeterías, restaurantes, comida rápida, pastelerías y saludable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="./index.html">
+        <img src="./assets/img/logo-alto-saavedra.png" alt="Alto Saavedra Mall – Inicio" class="logo-icon">
+        <span class="logo-text">Alto Saavedra Mall</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./entretenimientos.html">Entretenimientos</a></li>
+          <li><a href="./locales/locales.html">Locales</a></li>
+          <li><a href="./ofertas.html">Ofertas</a></li>
+          <li><a href="./gastronomia.html" aria-current="page">Gastronomía</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="container stack">
+    <h1>Gastronomía</h1>
+    <p class="mt-2 services-note">Sabores para todos los gustos. Desde cafés premium hasta comida rápida internacional.
+    </p>
+
+    <button class="gastronomia-back-btn" id="backBtn" onclick="showCategories()">← Volver a categorías</button>
+
+    <section class="gastronomia-categories-grid mt-3" id="categorySection">
+      <article class="gastronomia-category-card" onclick="showRestaurants('cafeterias')">
+        <div class="category-icon">☕</div>
+        <div class="category-content">
+          <h3 class="category-title">Cafeterías</h3>
+          <p class="category-description">Aromas únicos, café premium y pastelería artesanal para acompañar tus momentos
+            especiales.</p>
+          <span class="category-count">3 locales</span>
+        </div>
+      </article>
+
+      <article class="gastronomia-category-card" onclick="showRestaurants('restaurantes')">
+        <div class="category-icon">🍽️</div>
+        <div class="category-content">
+          <h3 class="category-title">Restaurantes</h3>
+          <p class="category-description">Experiencias gastronómicas completas con cocina internacional y ambiente
+            único.</p>
+          <span class="category-count">3 locales</span>
+        </div>
+      </article>
+
+      <article class="gastronomia-category-card" onclick="showRestaurants('rapida')">
+        <div class="category-icon">🍔</div>
+        <div class="category-content">
+          <h3 class="category-title">Comida Rápida</h3>
+          <p class="category-description">Las marcas más famosas del mundo con opciones rápidas, sabrosas y para toda la
+            familia.</p>
+          <span class="category-count">4 locales</span>
+        </div>
+      </article>
+    </section>
+
+    <div class="restaurant-grid" id="restaurantGrid"></div>
+    <div id="chatbot-container"></div>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="restaurantModal" class="restaurant-modal">
+    <div class="restaurant-modal-content">
+      <span class="close" onclick="closeRestaurantModal()">&times;</span>
+      <div class="restaurant-modal-header">
+        <h2 class="restaurant-modal-title" id="modalTitle"></h2>
+        <p class="restaurant-modal-subtitle" id="modalSubtitle"></p>
+      </div>
+      <div class="restaurant-details" id="modalDetails"></div>
+      <a href="#" class="visit-btn" id="visitBtn" target="_blank">Visitar sitio web</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container meta">
+      <span>© <span id="year"></span> Alto Saavedra Mall</span>
+      <span>Horarios: Lun a Dom 10–22 hs</span>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await loadRestaurantData();
+    });
+  </script>
+
+</body>
+
+</html>

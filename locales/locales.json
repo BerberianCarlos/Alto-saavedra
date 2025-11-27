@@ -1,0 +1,153 @@
+{
+  "cafeterias": [
+    {
+      "name": "Café Luna",
+      "cuisine": "Cafetería & Pastelería",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=200&fit=crop",
+      "description": "Ambiente acogedor con cafés artesanales y postres caseros.",
+      "hours": "7:00 - 22:00",
+      "phone": "+54 11 4567-8901",
+      "speciality": "Café de especialidad",
+      "price": "$$ - $$$",
+      "website": "https://cafeluna.com",
+      "top": "50%",
+      "left": "50%"
+    },
+    {
+      "name": "Sweet Dreams",
+      "cuisine": "Pastelería & Repostería",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=200&fit=crop",
+      "description": "Tortas y cupcakes artesanales.",
+      "hours": "8:00 - 21:00",
+      "phone": "+54 11 4567-8902",
+      "speciality": "Tortas personalizadas",
+      "price": "$$ - $$$",
+      "website": "https://sweetdreams.com",
+      "top": "38%",
+      "left": "25%"
+    }
+  ],
+
+  "restaurantes": [
+    {
+      "name": "Bella Italia",
+      "cuisine": "Italiana Auténtica",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=200&fit=crop",
+      "description": "Auténtica cocina italiana.",
+      "hours": "12:00 - 23:30",
+      "phone": "+54 11 4567-8904",
+      "speciality": "Pasta casera",
+      "price": "$$$ - $$$$",
+      "website": "https://bellaitalia.com",
+      "top": "62%",
+      "left": "72%"
+    },
+    {
+      "name": "Asado Premium",
+      "cuisine": "Parrilla Argentina",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=200&fit=crop",
+      "description": "Los mejores cortes de carne.",
+      "hours": "12:00 - 24:00",
+      "phone": "+54 11 4567-8905",
+      "speciality": "Bife de chorizo",
+      "price": "$$$ - $$$$",
+      "website": "https://asadopremium.com",
+      "top": "70%",
+      "left": "69%"
+    }
+  ],
+
+  "rapida": [
+    {
+      "name": "Burger Station",
+      "cuisine": "Hamburguesas Gourmet",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=200&fit=crop",
+      "description": "Hamburguesas artesanales.",
+      "hours": "11:00 - 22:00",
+      "phone": "+54 11 4567-8907",
+      "speciality": "Burger clásica",
+      "price": "$ - $$",
+      "website": "https://burgerstation.com",
+      "top": "62%",
+      "left": "25%"
+    },
+    {
+      "name": "Taco Loco",
+      "cuisine": "Mexicana Rápida",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=200&fit=crop",
+      "description": "Tacos al pastor.",
+      "hours": "11:30 - 22:30",
+      "phone": "+54 11 4567-8908",
+      "speciality": "Tacos & Quesadillas",
+      "price": "$ - $$",
+      "website": "https://tacoloco.com",
+      "top": "38%",
+      "left": "72%"
+    }
+  ],
+
+  "mix": [
+    {
+      "name": "Librería Corcho",
+      "cuisine": "Librería",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80",
+      "description": "Proyecto real — Librería online.",
+      "hours": "24 hs",
+      "phone": "-",
+      "speciality": "Libros y papelería",
+      "price": "$$",
+      "website": "https://francoalvarez7.github.io/libreria-corcho/",
+      "top": "30%",
+      "left": "28%"
+    },
+    {
+      "name": "Galería Verde",
+      "cuisine": "Vivero & Deco",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=600&q=80",
+      "description": "Proyecto real — Vivero.",
+      "hours": "24 hs",
+      "phone": "-",
+      "speciality": "Plantas y decoración",
+      "price": "$$",
+      "website": "https://404mqs.github.io/tpo-galeria-verde/index.html",
+      "top": "70%",
+      "left": "29%"
+    },
+    {
+      "name": "FlowerSpot",
+      "cuisine": "Florería",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=600&q=80",
+      "description": "Proyecto real — Florería online.",
+      "hours": "24 hs",
+      "phone": "-",
+      "speciality": "Ramos y deco floral",
+      "price": "$$",
+      "website": "https://berberiancarlos.github.io/FlowerSpot/Pages/index.html",
+      "top": "30%",
+      "left": "69%"
+    },
+    {
+      "name": "Aromanía",
+      "cuisine": "Aromaterapia & Deco",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1635749886064-8debe661b70e?auto=format&fit=crop&w=600&q=80",
+      "description": "Proyecto real — Aromaterapia.",
+      "hours": "24 hs",
+      "phone": "-",
+      "speciality": "Velas, aromas y deco",
+      "price": "$$",
+      "website": "https://lucasmuras.github.io/tpo-aromania-web/",
+      "top": "70%",
+      "left": "64%"
+    }
+  ]
+}

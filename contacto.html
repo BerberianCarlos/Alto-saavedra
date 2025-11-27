@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto – Alto Saavedra Mall</title>
+  <meta name="description" content="Consultas, horarios, ubicación y contacto del shopping.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="./index.html">
+        <img src="./assets/img/logo-alto-saavedra.png" alt="Alto Saavedra Mall – Inicio" class="logo-icon">
+        <span class="logo-text">Alto Saavedra Mall</span>
+      </a>
+
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./entretenimientos.html">Entretenimientos</a></li>
+          <li><a href="./locales/locales.html">Locales</a></li>
+          <li><a href="./ofertas.html">Ofertas</a></li>
+          <li><a href="./gastronomia.html">Gastronomía</a></li>
+          <li><a href="./contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="container stack">
+
+    <h1>Contacto</h1>
+    <p class="mt-2">Escribinos y te respondemos a la brevedad.</p>
+
+    <!-- ======= NUEVO LAYOUT EN 2 COLUMNAS ======= -->
+    <div class="contact-wrapper">
+
+      <!-- IZQUIERDA: TARJETAS -->
+      <div class="contact-info">
+
+        <div class="contact-card">
+          <h3>Dirección</h3>
+          <p>Av. Cabildo 2040<br>Belgrano, Ciudad Autónoma de Buenos Aires</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Horarios de Atencion al Cliente</h3>
+          <p>Lunes a Viernes 10–18 hs</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>atencioncliente@altosaavedramall.com</p>
+        </div>
+
+      </div>
+
+      <!-- DERECHA: FORMULARIO -->
+      <form class="contact-form" id="formContacto">
+
+        <label>
+          <span>Nombre</span>
+          <input type="text" name="nombre" required>
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+
+        <label class="full">
+          <span>Mensaje</span>
+          <textarea name="mensaje" rows="6" required></textarea>
+        </label>
+
+      <button class="btn btn--primary full" type="submit">Enviar</button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <div id="chatbot-container"></div>
+
+  <!-- POPUP DE ÉXITO -->
+  <div id="popupSuccess" class="popup-success">
+    <div class="popup-box">
+      <p>¡Mensaje enviado con éxito!</p>
+      <button id="closePopup" class="btn btn--primary">Cerrar</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container meta">
+      <span>© <span id="year"></span> Alto Saavedra Mall</span>
+      <span>Horarios: Lun a Dom 10–22 hs</span>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/contact.js"></script>
+
+</body>
+</html>

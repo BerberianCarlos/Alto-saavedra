@@ -1,0 +1,14 @@
+# Archivos de documentación interna
+DISEÑO.md
+MAPA.md
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Locales – Alto Saavedra Mall</title>
+  <meta name="description" content="Encontrá tus marcas favoritas y nuevos emprendimientos.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    /* Search container styles */
+    .search-container {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto var(--space-3);
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 40px 12px 16px;
+      font-size: 1rem;
+      border: 2px solid #e0e0e0;
+      border-radius: var(--radius-md);
+      background: var(--color-bg);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(201, 122, 64, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: var(--color-text-muted);
+    }
+
+    /* Highlight styles for search results */
+    .local-highlighted {
+      background: linear-gradient(135deg, rgba(201, 122, 64, 0.1), rgba(201, 122, 64, 0.05)) !important;
+      border: 2px solid var(--color-primary) !important;
+      transform: scale(1.02) !important;
+    }
+
+    .local-muted {
+      opacity: 0.4;
+      transform: scale(0.95);
+    }
+
+    /* Pin highlight styles */
+    .pin-highlighted {
+      background: var(--color-primary) !important;
+      border: 3px solid var(--color-primary-hover) !important;
+      transform: scale(1.2) !important;
+      z-index: 1000 !important;
+      animation: pulse 1.5s infinite;
+    }
+
+    .pin-muted {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(201, 122, 64, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(201, 122, 64, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(201, 122, 64, 0);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="../index.html">
+        <img src="../assets/img/logo-alto-saavedra.png" alt="Alto Saavedra Mall – Inicio" class="logo-icon">
+        <span class="logo-text">Alto Saavedra Mall</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../servicios.html">Servicios</a></li>
+          <li><a href="../entretenimientos.html">Entretenimientos</a></li>
+          <li><a href="./" aria-current="page">Locales</a></li>
+          <li><a href="../ofertas.html">Ofertas</a></li>
+          <li><a href="../gastronomia.html">Gastronomía</a></li>
+          <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="container stack">
+    <h1>Nuestros Locales</h1>
+    <p class="mt-2">Hacé clic en los pines del mapa para ver más detalles.</p>
+
+    <!-- MAPA -->
+    <section>
+      <div id="map-container">
+        <img src="../assets/img/Mapa_Shopping.jpeg" alt="Plano del Shopping" id="map-image">
+      </div>
+    </section>
+
+    <!-- LISTA DE LOCALES -->
+    <section>
+      <h2 class="mb-3">Listado de Tiendas</h2>
+
+      <!-- Buscador de locales -->
+      <div class="search-container mb-3">
+        <label for="buscar-locales" class="sr-only">Buscar locales por nombre</label>
+        <input type="text" id="buscar-locales" placeholder="Buscar locales por nombre..." class="search-input">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+      </div>
+      <div id="no-results" style="display:none; text-align:center; margin-top:20px; font-size:18px; font-weight:500;">
+        No se encontraron locales
+      </div>
+      <div id="lista-locales" class="grid cols-3 mt-3" style="margin-bottom: var(--space-4);"></div>
+
+    </section>
+    <div id="chatbot-container"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container meta">
+      <span>© <span id="year"></span> Alto Saavedra Mall</span>
+      <span>Horarios: Lun a Dom 10–22 hs</span>
+    </div>
+  </footer>
+
+  <div id="modal-overlay">
+    <div class="modal-card">
+
+      <button class="btn-close-modal" id="close-modal">&times;</button>
+
+      <!-- Imagen -->
+      <div class="modal-img-container">
+        <img id="modal-img-src" src="" alt="">
+      </div>
+
+      <!-- Contenido -->
+      <div class="modal-body">
+        <h3 id="modal-title" class="modal-title">Nombre del Local</h3>
+        <p id="modal-rubro" class="modal-rubro">Rubro</p>
+
+        <!-- Datos extendidos -->
+        <p id="modal-descripcion" class="modal-descripcion mb-2">
+          <!-- descripción -->
+        </p>
+
+        <div class="modal-info-block">
+          <p><strong>Especialidad:</strong> <span id="modal-especialidad"></span></p>
+          <p><strong>Horarios:</strong> <span id="modal-horarios"></span></p>
+          <p><strong>Teléfono:</strong> <span id="modal-telefono"></span></p>
+          <p><strong>Precio:</strong> <span id="modal-precio"></span></p>
+          <p><strong>Calificación:</strong> <span id="modal-rating"></span></p>
+        </div>
+
+        <!-- Botón -->
+        <a id="modal-link" class="btn btn--primary mt-3" href="#" target="_blank">
+          Visitar Sitio Web
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JS ACTUALIZADO -->
+  <script src="../js/main.js"></script>
+  <script src="../js/locales-mall.js"></script>
+
+</body>
+
+</html>

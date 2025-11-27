@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicios – Alto Saavedra Mall</title>
+  <meta name="description" content="Estacionamiento, espacios verdes, sala de lactancia, atención al cliente y más.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="./index.html">
+        <img src="./assets/img/logo-alto-saavedra.png" alt="Alto Saavedra Mall – Inicio" class="logo-icon">
+        <span class="logo-text">Alto Saavedra Mall</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./servicios.html" aria-current="page">Servicios</a></li>
+          <li><a href="./entretenimientos.html">Entretenimientos</a></li>
+          <li><a href="./locales/locales.html">Locales</a></li>
+          <li><a href="./ofertas.html">Ofertas</a></li>
+          <li><a href="./gastronomia.html">Gastronomía</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="container stack">
+    <h1>Servicios</h1>
+    <p class="mt-2 services-note">Todo lo que necesitás para una estadía cómoda, segura y accesible.</p>
+
+    <section class="mt-3" aria-labelledby="titulo-servicios">
+      <h2 id="titulo-servicios" class="sr-only">Listado de servicios</h2>
+      <ul class="services-grid" role="list">
+        <li>
+          <article class="service-card" aria-label="Estacionamiento accesible, señalizado y amplio">
+            <div class="service-card__icon" aria-hidden="true">
+              <span class="material-symbols-rounded" aria-hidden="true">local_parking</span>
+            </div>
+            <div>
+              <h3 class="service-card__title">Estacionamiento</h3>
+              <p class="service-card__desc">Amplio, señalizado, espacios reservados y acceso directo.</p>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="service-card" aria-label="WiFi gratuito en todo el shopping">
+            <div class="service-card__icon" aria-hidden="true">
+              <span class="material-symbols-rounded" aria-hidden="true">wifi</span>
+            </div>
+            <div>
+              <h3 class="service-card__title">WiFi gratuito</h3>
+              <p class="service-card__desc">Conexión estable y gratuita en todas las áreas comunes.</p>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="service-card" aria-label="Espacios verdes con zonas de descanso">
+            <div class="service-card__icon" aria-hidden="true">
+              <span class="material-symbols-rounded" aria-hidden="true">park</span>
+            </div>
+            <div>
+              <h3 class="service-card__title">Espacios verdes</h3>
+              <p class="service-card__desc">Zonas al aire libre con sombra y bancos.</p>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="service-card" aria-label="Sala de lactancia cómoda y privada">
+            <div class="service-card__icon" aria-hidden="true">
+              <span class="material-symbols-rounded" aria-hidden="true">breastfeeding</span>
+            </div>
+            <div>
+              <h3 class="service-card__title">Sala de lactancia</h3>
+              <p class="service-card__desc">Espacio privado, higiénico y equipado para familias.</p>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="service-card" aria-label="Eventos y actividades culturales y familiares">
+            <div class="service-card__icon" aria-hidden="true">
+              <span class="material-symbols-rounded" aria-hidden="true">event</span>
+            </div>
+            <div>
+              <h3 class="service-card__title">Eventos</h3>
+              <p class="service-card__desc">Actividades culturales, ferias y shows para toda la familia.</p>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="service-card" aria-label="Atención al cliente para consultas y asistencia">
+            <div class="service-card__icon" aria-hidden="true">
+              <span class="material-symbols-rounded" aria-hidden="true">support_agent</span>
+            </div>
+            <div>
+              <h3 class="service-card__title">Atención al cliente</h3>
+              <p class="service-card__desc">Información, objetos perdidos y asistencia personalizada.</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <div id="chatbot-container"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container meta">
+      <span>© <span id="year"></span> Alto Saavedra Mall</span>
+      <span>Horarios: Lun a Dom 10–22 hs</span>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

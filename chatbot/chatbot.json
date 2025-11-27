@@ -1,0 +1,60 @@
+{
+  "inicio": {
+    "mensaje": "¡Hola! ¿En qué puedo ayudarte?",
+    "opciones": [
+      { "texto": "Ver categorías de locales", "siguiente": "categorias" },
+      { "texto": "Horarios del shopping", "siguiente": "horarios" },
+      { "texto": "Estacionamiento", "siguiente": "estacionamiento" },
+      { "texto": "Cómo llegar", "siguiente": "llegar" },
+      { "texto": "Servicios del shopping", "siguiente": "servicios" }
+    ]
+  },
+
+  "categorias": {
+    "mensaje": "Estas son las categorías de locales disponibles:",
+    "dinamico": "categorias",
+    "opciones": [
+      { "texto": "Volver al inicio", "siguiente": "inicio" }
+    ]
+  },
+
+  "locales": {
+    "mensaje": "Locales disponibles en esta categoría:",
+    "dinamico": "locales",
+    "opciones": [
+      { "texto": "Volver a categorías", "siguiente": "categorias" },
+      { "texto": "Volver al inicio", "siguiente": "inicio" }
+    ]
+  },
+
+  "horarios": {
+    "mensaje": "El shopping abre de 10:00 a 22:00 hs. Los patios de comida funcionan hasta las 23:30.",
+    "opciones": [
+      { "texto": "Ver estacionamiento", "siguiente": "estacionamiento" },
+      { "texto": "Volver al inicio", "siguiente": "inicio" }
+    ]
+  },
+
+  "estacionamiento": {
+    "mensaje": "Información general del estacionamiento:\n• Abierto 24 hs\n• Primeros 30 min gratis\n• Tarifas accesibles",
+    "opciones": [
+      { "texto": "Cómo llegar", "siguiente": "llegar" },
+      { "texto": "Volver al inicio", "siguiente": "inicio" }
+    ]
+  },
+
+  "llegar": {
+    "mensaje": "Dirección: Av. Principal 1234\nColectivos: 21, 71, 101, 166\nTren: Sarmiento (a 400m)",
+    "opciones": [
+      { "texto": "Ver estacionamiento", "siguiente": "estacionamiento" },
+      { "texto": "Volver al inicio", "siguiente": "inicio" }
+    ]
+  },
+
+  "servicios": {
+    "mensaje": "Servicios disponibles:\n• WiFi gratuito\n• Cajeros automáticos\n• Atención al cliente\n• Área de primeros auxilios",
+    "opciones": [
+      { "texto": "Volver al inicio", "siguiente": "inicio" }
+    ]
+  }
+}

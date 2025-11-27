@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-labelledby="titulo-mapa">
+  <title id="titulo-mapa">Mapa del Alto Saavedra Mall (placeholder)</title>
+  <rect x="10" y="10" width="120" height="80" rx="8" fill="#E4D7C7" stroke="#C97A40" stroke-width="2" />
+  <text x="20" y="55" font-family="Inter, sans-serif" font-size="12" fill="#2F2F2F">Planta Baja</text>
+</svg>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entretenimientos – Alto Saavedra Mall</title>
+  <meta name="description" content="Cine, bowling, juegos para chicos, arte y música en vivo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="./index.html">
+        <img src="./assets/img/logo-alto-saavedra.png" alt="Alto Saavedra Mall – Inicio" class="logo-icon">
+        <span class="logo-text">Alto Saavedra Mall</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./entretenimientos.html" aria-current="page">Entretenimientos</a></li>
+          <li><a href="./locales/locales.html">Locales</a></li>
+          <li><a href="./ofertas.html">Ofertas</a></li>
+          <li><a href="./gastronomia.html">Gastronomía</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="container stack">
+    <h1>Entretenimientos</h1>
+    <p class="mt-2 services-note">Diversión para todas las edades. Cine, bowling, juegos, arte y música en vivo.</p>
+    
+    <h2 class="sr-only">Opciones de entretenimiento</h2>
+    <ul class="entertainment-grid" role="list">
+      <li>
+        <article class="entertainment-card">
+          <img 
+            class="entertainment-card__image" 
+            src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop" 
+            alt="Sala de cine moderna con butacas rojas y pantalla grande"
+            loading="lazy"
+          >
+          <div class="entertainment-card__overlay">
+            <h3 class="entertainment-card__title">Cine</h3>
+            <p class="entertainment-card__desc">Estrenos, clásicos y cine 3D. 8 salas con tecnología de última generación.</p>
+          </div>
+        </article>
+      </li>
+      
+      <li>
+        <article class="entertainment-card">
+          <img 
+            class="entertainment-card__image" 
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop" 
+            alt="Pista de bowling con bolas y pines iluminados"
+            loading="lazy"
+          >
+          <div class="entertainment-card__overlay">
+            <h3 class="entertainment-card__title">Bowling</h3>
+            <p class="entertainment-card__desc">12 pistas modernas con sistema automático y zona de comidas.</p>
+          </div>
+        </article>
+      </li>
+      
+      <li>
+        <article class="entertainment-card">
+          <img 
+            class="entertainment-card__image" 
+            src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&h=600&fit=crop" 
+            alt="Niños jugando en área de entretenimiento con juegos coloridos"
+            loading="lazy"
+          >
+          <div class="entertainment-card__overlay">
+            <h3 class="entertainment-card__title">Juegos Infantiles</h3>
+            <p class="entertainment-card__desc">Espacios seguros con juegos para todas las edades. Arcade y zona soft.</p>
+          </div>
+        </article>
+      </li>
+      
+      <li>
+        <article class="entertainment-card">
+          <img 
+            class="entertainment-card__image" 
+            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop" 
+            alt="Galería de arte contemporáneo con obras expuestas"
+            loading="lazy"
+          >
+          <div class="entertainment-card__overlay">
+            <h3 class="entertainment-card__title">Arte y Galería</h3>
+            <p class="entertainment-card__desc">Exposiciones rotativas de artistas locales e internacionales.</p>
+          </div>
+        </article>
+      </li>
+      
+      <li>
+        <article class="entertainment-card">
+          <img 
+            class="entertainment-card__image" 
+            src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&h=600&fit=crop" 
+            alt="Concierto en vivo con público y luces de escenario"
+            loading="lazy"
+          >
+          <div class="entertainment-card__overlay">
+            <h3 class="entertainment-card__title">Música y Eventos</h3>
+            <p class="entertainment-card__desc">Shows en vivo, festivales temáticos y eventos especiales mensuales.</p>
+          </div>
+        </article>
+      </li>
+      
+      <li>
+        <article class="entertainment-card">
+          <img 
+            class="entertainment-card__image" 
+            src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=800&h=600&fit=crop" 
+            alt="Persona usando gafas de realidad virtual en experiencia inmersiva"
+            loading="lazy"
+          >
+          <div class="entertainment-card__overlay">
+            <h3 class="entertainment-card__title">Realidad Virtual</h3>
+            <p class="entertainment-card__desc">Experiencias inmersivas de última generación. Juegos y simuladores VR.</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  <div id="chatbot-container"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container meta">
+      <span>© <span id="year"></span> Alto Saavedra Mall</span>
+      <span>Horarios: Lun a Dom 10–22 hs</span>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
