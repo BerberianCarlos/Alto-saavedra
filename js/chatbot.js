@@ -8,9 +8,9 @@ let categoriaSeleccionada = null;
 async function initChatbot() {
 
     // cargar chatbot.json
-    chatbotData = await (await fetch("./chatbot/chatbot.json")).json();
+    chatbotData = await (await fetch("../chatbot/chatbot.json")).json();
 
-    localesData = await (await fetch("./locales/locales.json")).json?.() 
+    localesData = await (await fetch("../locales/locales.json")).json?.() 
         || window.localesData;
     configurarToggleChatbot();   // ← añadir esta línea
 
