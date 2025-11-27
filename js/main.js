@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("chatbot-container");
 
     // 1) cargar el HTML del chatbot
-    const response = await fetch("/chatbot/chatbot.html");
+    const response = await fetch("./chatbot/chatbot.html");
     const html = await response.text();
     container.innerHTML = html;
 
